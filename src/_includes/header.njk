@@ -1,0 +1,26 @@
+<header class="site">
+  <div class="wrap bar">
+ 
+  <a href="#" class="brand-block">
+      <div class="logo-wrapper">
+        <img src="../assets/images/logo.png" alt="Aeternus Verlag Logo" class="brand-logo"/>
+      </div>  
+    </a> 
+<div class="nav-container">
+      <nav class="primary">
+    <a href="#imprint">{{ i18n["nav.mission"][lang] }}</a>
+          <a href="#featured">{{ i18n["nav.seton"][lang] }}</a>
+          <a href="#catalog">{{ i18n["nav.catalog"][lang] }}</a>
+          <a href="#series">{{ i18n["nav.series"][lang] }}</a>
+      </nav>
+     <div class="header-actions">
+          <a href="#catalog" class="btn-ghost">{{ i18n["nav.readingroom"][lang] }}</a>
+        </div>
+       <!-- Language Selector Toggles -->
+    <div class="lang-switch" role="group" aria-label="Language switcher">
+          <a href="/" class="lang-btn {% if lang == 'de' %}is-active{% endif %}">DE</a>
+          <span class="lang-sep">|</span>
+          <a href="/en/" class="lang-btn {% if lang == 'en' %}is-active{% endif %}">EN</a>
+        </div>  
+</div>
+</header>
