@@ -1,10 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ lang | default('de') }}">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Aeternus Verlag </title>
-<meta name="description" content="Ironwell & Vance is an independent publishing house printing first editions on military history, statecraft, and economic theory since 1894." />
+<meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.aeternus-verlag.de/{{ lang }}/" />
+  <link rel="alternate" hreflang="de" href="https://www.aeternus-verlag.de/de/" />
+  <link rel="alternate" hreflang="en" href="https://www.aeternus-verlag.de/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.aeternus-verlag.de/de/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ i18n["meta.title"][lang] }}" />
+  <meta property="og:description" content="{{ i18n["meta.description"][lang] }}" />
+  <meta property="og:url" content="https://www.aeternus-verlag.de/{{ lang }}/" />
+  <meta property="og:site_name" content="Aeternus Verlag" />
+  <meta property="og:locale" content="{% if lang == 'de' %}de_DE{% else %}en_US{% endif %}" />
+  <meta property="og:image" content="https://www.aeternus-verlag.de/assets/images/og-share-cover.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -45,7 +56,9 @@ function switchLanguage(lang, button) {
 
 
 </script>
+
 <script>
+//smooth language page convert
   function initAeternusRouter() {
     // ---- 1. HANDLE EXTERNAL/INTERNAL LINK CLICKING ----
     document.body.addEventListener('click', async (e) => {
@@ -101,6 +114,12 @@ function switchLanguage(lang, button) {
           const newMain = newDoc.querySelector('main');
           if (currentMain && newMain) currentMain.innerHTML = newMain.innerHTML;
 
+          // === FIX FOR FOOTER LANGUAGE CHANGE ===
+          // Looks for the layout site footer and updates its content
+          const currentFooter = document.querySelector('footer.site');
+          const newFooter = newDoc.querySelector('footer.site');
+          if (currentFooter && newFooter) currentFooter.innerHTML = newFooter.innerHTML;
+
           // Swap Switcher Active States
           const currentSwitch = document.querySelector('.lang-switch');
           const newSwitch = newDoc.querySelector('.lang-switch');
@@ -132,6 +151,5 @@ function switchLanguage(lang, button) {
     initAeternusRouter();
   }
 </script>
-
 </body>
 </html>

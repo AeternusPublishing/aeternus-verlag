@@ -1,3 +1,4 @@
+
 <footer class="site">
   <div class="wrap inner">
     <div class="foot-grid">
@@ -6,19 +7,40 @@
            <img src="../assets/images/logo.png" alt="Aeternus Verlag Logo" class="brand-logo"/>
          
         </div>
-        <p class="addr">AETERNUS VERLAG<br/>
-Redaktion / Herausgeber<br/>
-Strategieallee 1<br/>
-10115 Berlin<br/>
-Deutschland</p>
+     <p class="" style="color:rgba(243, 231, 207, 0.7);
+    font-size: 15px;
+    line-height: 1.65;">
+          {{ i18n["footer.text"][lang] }}
+        </p>
       </div>
-      <div class="foot-col"><h4>Series</h4><ul><li><a href="#">Military History</a></li><li><a href="#">Political Economy</a></li><li><a href="#">Statecraft</a></li><li><a href="#">Strategic Theory</a></li></ul></div>
-      <div class="foot-col"><h4>House</h4><ul><li><a href="#">Imprint</a></li><li><a href="#">Editors</a></li><li><a href="#">Press</a></li><li><a href="#">Trade</a></li></ul></div>
-      <div class="foot-col"><h4>Reader</h4><ul><li><a href="#">Subscribe</a></li><li><a href="#">Standing Order</a></li><li><a href="#">Gift</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div class="foot-col">
+      <h4>{{ i18n["footer.colSeries"][lang] }}</h4>
+      <ul><li><a href="#">{{ i18n["footer.linkAnthracite"][lang] }}</a></li>
+      <li><a href="#">{{ i18n["footer.linkGreen"][lang] }}</a></li>
+      <li><a href="#">{{ i18n["footer.linkRed"][lang] }}</a></li>
+      <li><a href="#">{{ i18n["footer.linkBlue"][lang] }}</a></li>
+        <li><a href="#">{{ i18n["footer.linkAmber"][lang] }}</a></li>
+      </ul></div>
+      <div class="foot-col">
+      <h4>{{ i18n["footer.colHouse"][lang] }}</h4>
+      <ul><li><a href="#">{{ i18n["footer.linkAbout"][lang] }}</a></li>
+      <li><a href="#">{{ i18n["footer.linkMission"][lang] }}</a></li>
+          <li><a href="#">{{ i18n["footer.linkTranslation"][lang] }}</a></li>
+          <li><a href="#">{{ i18n["footer.linkPress"][lang] }}</a></li>
+          <li><a href="#">{{ i18n["footer.linkTrade"][lang] }}</a></li>
+      </ul></div>
+      <div class="foot-col">
+      <h4>{{ i18n["footer.colReader"][lang] }}</h4>
+        <ul>
+          <li><a href="#catalogue">{{ i18n["footer.linkCatalogue"][lang] }}</a></li>
+          <li><a href="#">{{ i18n["footer.linkReadingRoom"][lang] }}</a></li>
+          <li><a href="#">{{ i18n["footer.linkContact"][lang] }}</a></li>
+          <li><a href="#">{{ i18n["footer.linkNewsletter"][lang] }}</a></li>
+      </ul></div>
     </div>
     <div class="foot-end">
-      <span>© AETERNUS VERLAG. All rights reserved.</span>
-      <span>Each edition within our five pillars is curated by a sitting editor and a council of scholars. New volumes are admitted to the Master Matrix only by unanimous vote.</span>
+      <span>{{ i18n["footer.copyright"][lang] }}</span>
+     
     </div>
   </div>
 </footer>
