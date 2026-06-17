@@ -164,6 +164,9 @@ h2.title-xl .nostyle{font-style:normal;}
   .catalog-grid {
     grid-template-columns: 1fr;
   }
+  .metrics {
+    grid-template-columns: repeat(1, 1fr);
+}
 }
 .book-card{display:block;position:relative;transition:transform .6s cubic-bezier(.2,.7,.2,1);
 background-color: var(--card-bg);}
@@ -373,12 +376,7 @@ margin-bottom: 24px;
     }
 
 
-    #catalog .catalog-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 30px;
-        margin-bottom: 60px;
-      }
+ 
       #catalog .book-card {
         
         border: 1px solid rgba(212, 175, 55, 0.08);
