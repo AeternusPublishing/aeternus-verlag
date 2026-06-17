@@ -168,11 +168,14 @@ h2.title-xl .nostyle{font-style:normal;}
     grid-template-columns: repeat(1, 1fr);
 }
 .container1{
-  padding: 0 5px !important;
+  padding: 0 15px !important;
 }
 header.site{
   padding-left:3px;
     padding-right:3px;
+}
+.specs {
+        grid-template-columns: repeat(1, 1fr);
 }
 }
 .book-card{display:block;position:relative;transition:transform .6s cubic-bezier(.2,.7,.2,1);
