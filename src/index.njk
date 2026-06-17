@@ -86,31 +86,32 @@ permalink: /index.html
 
 <!--FEATURED BOOK SECTION -->
 
-<section id="featured" class="block">
+<section id="featured-hunted" class="block">
   <div class="paper-grain" style="position:absolute;inset:0;opacity:.3;pointer-events:none;"></div>
   <div class="wrap featured-grid">
     <div class="book-frame">
       <div class="glow"></div>
       <div class="shot"><img src="assets/images/book-hunted.png" alt="The Long War — first edition, navy cloth with gold-foil title" /></div>
-      <div class="caption"><span class="line"></span><span>First Edition · 1,200 copies</span><span class="line"></span></div>
+     
     </div>
     <div>
-      <div class="eyebrow-mini">✦ {{ i18n["hunted.eyebrow"][lang] }}</div>
+      <div class="eyebrow-mini">✦{{ i18n["hunted.eyebrow"][lang] }}</div>
       <h2 class="title-xl"><span class="gold-grad">{{ i18n["hunted.title"][lang] }}</span><br/><span class="nostyle"></span></h2>
-      <p class="byline">by <span style="color:var(--parchment);">Sir Henry Ashbourne</span> · <em>Series in Strategic Theory, Vol. XIV</em></p>
+      <em>{{ i18n["hunted.subheading"][lang] }}</em>
       <div class="rule-gold" style="margin-top:40px;"></div>
-      <p style="margin-top:40px;max-width:560px;font-size:18px;line-height:1.65;color:rgba(236,227,208,.85);">A singular account of the twentieth century read as one continuous conflict — from the trenches of the Marne to the dissolution of the Soviet Union. Ashbourne writes with the gravity of the historian and the precision of the strategist.</p>
+      <p style="margin-top:40px;max-width:560px;font-size:18px;line-height:1.65;color:rgba(236,227,208,.85);">  <p>{{ i18n["hunted.text1"][lang] }}</p>
+        <p style="margin-top:20px;">{{ i18n["hunted.text2"][lang] }}</p></p>
       <dl class="specs">
-        <div class="row"><dt>Pages</dt><dd>812</dd></div>
-        <div class="row"><dt>Format</dt><dd>Octavo, cloth</dd></div>
-        <div class="row"><dt>Binding</dt><dd>Smyth-sewn</dd></div>
-        <div class="row"><dt>Paper</dt><dd>Mohawk Superfine</dd></div>
-        <div class="row"><dt>Printed</dt><dd>Oxford, England</dd></div>
-        <div class="row"><dt>Price</dt><dd>£ 78.00</dd></div>
+        <div class="row"><dt>AUTHOR</dt><dd>Ernest Thompson Seton</dd></div>
+        <div class="row"><dt>SERIES</dt><dd>The Seton Edition</dd></div>
+        <div class="row"><dt>Original Title</dt><dd>Lives of the Hunted</dd></div>
+        <div class="row"><dt>First Published</dt><dd>1901</dd></div>
+        <div class="row"><dt>Status</dt><dd>In preparation</dd></div>
+        <div class="row"><dt>Language</dt><dd>German</dd></div>
       </dl>
       <div class="featured-cta">
-        <a href="#" class="btn btn-gold">Reserve a Copy <span class="ar">→</span></a>
-        <a href="#" class="read-link">Read the opening chapter</a>
+        <a href="#" class="btn btn-gold">Explore The Seton Edition <span class="ar">→</span></a>
+        <a href="#" class="read-link">Reading Sample Coming Soon</a>
       </div>
     </div>
   </div>
@@ -123,9 +124,11 @@ permalink: /index.html
       <div class="eyebrow-mini" style="color: #d4af37; letter-spacing: 0.15em; font-size: 0.85rem;">
         {{ i18n["catalogue.eyebrow"][lang] }}
       </div>
-      <h2 class="title-xl" style="margin-top: 15px; font-family: serif; font-weight: 400; font-size: 2.5rem; color: #f3e7cf;">
+      <h2 class="title-xl" style="margin-top: 15px; font-family: serif; font-weight: 400;">
+      <span class="gold-grad">
         {{ i18n["catalogue.title"][lang] }}
       </h2>
+      </span>
       <div style="margin-top: 25px; font-size: 16px; line-height: 1.8; color: rgba(243, 231, 207, 0.85); text-align: justify;">
         <p style="margin-bottom: 20px;">{{ i18n["catalogue.intro1"][lang] }}</p>
         <p style="margin-bottom: 0;">{{ i18n["catalogue.intro2"][lang] }}</p>
@@ -377,8 +380,10 @@ permalink: /index.html
     <div class="cat-head">
       <div>
         <div class="eyebrow-mini">{{ i18n["series.eyebrow"][lang] }}</div>
-        <h2 class="title-xl"><span class="gold-grad nostyle"> {{ i18n["series.title"][lang] }}</span></h2>
+        <h2 class="title-xl" style="margin-top: 15px; font-family: serif; font-weight: 400;"><span class="gold-grad nostyle"> {{ i18n["series.title"][lang] }}</span></h2>
+            <div class="lede" style="font-size: 16px; line-height: 1.75; color: rgba(243, 231, 207, 0.8); margin-bottom: 35px;">
          <p>{{ i18n["series.intro"][lang] }}</p>
+         </div>
       </div>
      
     </div>
