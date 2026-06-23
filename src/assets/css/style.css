@@ -83,10 +83,10 @@ h1.headline .l2,h1.headline .l3{display:block;}
 .btn-link{color:var(--gold);border-bottom:1px solid rgba(201,162,74,.5);padding:0 0 4px;font-family:var(--font-sans);font-size:11px;letter-spacing:.32em;text-transform:uppercase;transition:color .3s;}
 .btn-link:hover{color:var(--parchment);}
 
-.metrics{margin-top:80px;display:grid;grid-template-columns:repeat(2,1fr);gap:32px 48px;border-top:1px solid var(--border);padding-top:40px;}
-@media(min-width:768px){.metrics{grid-template-columns:repeat(4,1fr);}}
-.metric .n{font-family:var(--font-display);font-size:40px;line-height:1;background:linear-gradient(180deg,#e9c97a,#9a7b2e);-webkit-background-clip:text;background-clip:text;color:transparent;}
-@media(min-width:768px){.metric .n{font-size:48px;}}
+.metrics{margin-top:80px;display:grid;grid-template-columns:repeat(2,1fr);gap:32px 10px;border-top:1px solid var(--border);padding-top:40px;}
+@media(min-width:768px){.metrics{grid-template-columns:repeat(5,1fr);}}
+.metric .n{font-family:var(--font-display);font-size:20px;line-height:1;background:linear-gradient(180deg,#e9c97a,#9a7b2e);-webkit-background-clip:text;background-clip:text;color:transparent;}
+@media(min-width:768px){.metric .n{font-size:30px;}}
 .metric .l{margin-top:8px;font-family:var(--font-sans);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);}
 
 /* MARQUEE */

@@ -33,8 +33,8 @@ module.exports = {
           "metrics.info3.2nd": { de: "Kern unserer Arbeit", en: "Core of our work " },
           "metrics.info4.1st": { de: "5 REIHEN ", en: "5 SERIES" },
           "metrics.info4.2nd": { de: "Klar geordnete Programmsäulen ", en: "Clearly ordered programme pillars " },
-          "metrics.info5.1st": { de: "DE / EN ", en: "German first, English accompanying " },
-          "metrics.info5.2nd": { de: "DE / EN ", en: "Deutsch zuerst, Englisch begleitend " },
+          "metrics.info5.1st": { de: "DE / EN ", en: "DE / EN" },
+          "metrics.info5.2nd": { de: "Deutsch zuerst, Englisch begleitend ", en: "German first, English accompanying  " },
 
   // About Us Section
   "about.eyebrow": { 
@@ -109,12 +109,12 @@ module.exports = {
     en: "✦ FEATURED EDITION"
   },
   "hunted.title": {
-    de: "Das Leben der Gejagten.",
-    en: "Lives of the Hunted."
+    de: "Wilde Tiere, die ich kannte",
+    en: "Wild Animals I Have Known"
   },
   "hunted.subheading": {
-    de: "Ernest Thompson Seton · Aus der Seton-Edition",
-    en: "Ernest Thompson Seton · From the Seton Edition"
+    de: "Ernest Thompson Seton · Band I der Seton-Edition",
+    en: "Ernest Thompson Seton · Volume I of the Seton Edition "
   },
   "hunted.text1": {
     de: "In „Das Leben der Gejagten“ folgt Ernest Thompson Seton den Spuren jener Tiere, deren Dasein unter dem alten Gesetz der Wildnis steht: Flucht, Hunger, Instinkt, Verfolgung, List und Würde. Es sind keine Tiergeschichten im harmlosen Sinn, sondern Lebensbilder von Geschöpfen, die ihre Welt nicht erklären, sondern bestehen müssen.",
@@ -126,15 +126,30 @@ module.exports = {
   },
   
   // Book Technical Specs (dl keys)
+  //"hunted.specAuthor": { de: "Autor", en: "Author" },
+  //"hunted.specOriginal": { de: "Originaltitel", en: "Original Title" },
+  //"hunted.specPublished": { de: "Erstveröffentlichung", en: "First Published" },
+  //"hunted.specSeries": { de: "Reihe", en: "Series" },
+  //"hunted.specSeriesVal": { de: "Seton-Edition", en: "The Seton Edition" },
+  //"hunted.specStatus": { de: "Status", en: "Status" },
+  //"hunted.specStatusVal": { de: "In Vorbereitung", en: "In preparation" },
+  //"hunted.specLanguage": { de: "Sprache", en: "Language" },
+  //"hunted.specLanguageVal": { de: "Deutsch", en: "German" },
+
+
   "hunted.specAuthor": { de: "Autor", en: "Author" },
   "hunted.specOriginal": { de: "Originaltitel", en: "Original Title" },
   "hunted.specPublished": { de: "Erstveröffentlichung", en: "First Published" },
   "hunted.specSeries": { de: "Reihe", en: "Series" },
   "hunted.specSeriesVal": { de: "Seton-Edition", en: "The Seton Edition" },
   "hunted.specStatus": { de: "Status", en: "Status" },
-  "hunted.specStatusVal": { de: "In Vorbereitung", en: "In preparation" },
+  "hunted.specStatusVal": { de: "Erschienen", en: "Published" },
   "hunted.specLanguage": { de: "Sprache", en: "Language" },
   "hunted.specLanguageVal": { de: "Deutsch", en: "German" },
+  "hunted.specFormatVal": {
+        "de": "Gebundene Ausgabe",
+        "en": "Hardcover"
+    },
 
   // CTAs
   "hunted.btnExplore": {
