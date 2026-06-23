@@ -271,7 +271,7 @@ hreflang: true
 {% for pillar in i18n.catalogItems %}
      <a href="#" class="book-card" style="--card-bg: {{ pillar.bg_color }}; --card-hover: {{ pillar.hover_bg }}; --card-accent: {{ book.accent_color }}; padding:2rem;border-radius:10px">
       <div class="cover">
-    <img src="{{ pillar.image | url }}" alt="{{ pillar.alt_text }}" loading="lazy" decoding="async"/>
+    <img src="../{{ pillar.image | url }}" alt="{{ pillar.alt_text }}" loading="lazy" decoding="async"/>
       </div>
       <div class="meta">
       <span>{{ pillar.category[lang] }}</span>
