@@ -2,7 +2,7 @@ name: Deploy Eleventy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ] # Triggers every time you push to your main branch
+    branches: [ "main" ]
 
 permissions:
   contents: read
@@ -23,19 +23,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-node-version: '20'
+          node-version: '20' # 💡 Fixed this line!
           cache: 'npm'
 
       - name: Install Dependencies
         run: npm ci
 
       - name: Build Eleventy Site
-        run: npm run build # Runs your Eleventy compiler setup
+        run: npm run build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site' # Points to your Eleventy output directory
+          path: '_site'
 
   deploy:
     environment:
