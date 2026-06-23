@@ -1,15 +1,20 @@
 ---
-title: Aeternus Verlag
+title: "AETERNUS VERLAG · Editionshaus für historische Texte & Klassiker"
 layout: base.njk
 lang: de
 permalink: /index.html
+hreflang: true
 ---
 
 <main>
 
 <!--HERO SECTION-->
 <section class="hero">
-  <img class="hero-bg" src="assets/images/hero-library.jpg" alt="Antique books, military map, brass compass and candle on a mahogany desk" />
+  <picture style="display:contents">
+    <source type="image/avif" srcset="/assets/images/hero-library.avif" />
+    <source type="image/webp" srcset="/assets/images/hero-library.webp" />
+    <img class="hero-bg" src="/assets/images/hero-library.jpg" alt="Antique books, military map, brass compass and candle on a mahogany desk" width="1920" height="1080" fetchpriority="high" decoding="async" />
+  </picture>
   <div class="hero-veil"></div>
   <div class="hero-vignette vignette"></div>
   <div class="hero-grain paper-grain"></div>
@@ -107,7 +112,15 @@ permalink: /index.html
   <div class="wrap featured-grid">
     <div class="book-frame">
       <div class="glow"></div>
+<<<<<<< HEAD
       <div class="shot"><img src="assets/images/emest-4.jpg" alt="The Long War — first edition, navy cloth with gold-foil title" /></div>
+=======
+      <div class="shot"><picture style="display:contents">
+        <source type="image/avif" srcset="/assets/images/book-hunted.avif" />
+        <source type="image/webp" srcset="/assets/images/book-hunted.webp" />
+        <img src="/assets/images/book-hunted-fallback.jpg" alt="The Long War — first edition, navy cloth with gold-foil title" width="1024" height="1536" loading="lazy" decoding="async" />
+      </picture></div>
+>>>>>>> 85177045817b7aade52de69f0e9113f11c3586c4
      
     </div>
     <div>
@@ -167,7 +180,7 @@ permalink: /index.html
           
           <div>
             <div class="cover" style="text-align: center; margin-bottom: 25px; background: rgba(0,0,0,0.2); padding: 20px 10px; border-radius: 4px;">
-              <img src="/assets/images/emest-{{ loop.index }}.jpg" alt="{{ pillar.title[lang] }}" style="height: 100%;object-fit:cover;width:100%; box-shadow: 0 10px 22px rgba(0,0,0,0.6); border-radius: 2px;" onerror="this.style.display='none';"/>
+              <img src="/assets/images/emest-{{ loop.index }}.jpg" alt="{{ pillar.title[lang] }}" style="height: 100%;object-fit:cover;width:100%; box-shadow: 0 10px 22px rgba(0,0,0,0.6); border-radius: 2px;" loading="lazy" decoding="async" onerror="this.style.display='none';"/>
             </div>
          
             <div style="font-size: 0.75rem; letter-spacing: 0.08em; color: #d4af37; text-transform: uppercase; margin-bottom: 8px; font-weight: 600;">
@@ -255,7 +268,7 @@ permalink: /index.html
 {% for pillar in i18n.catalogItems %}
      <a href="#" class="book-card" style="--card-bg: {{ pillar.bg_color }}; --card-hover: {{ pillar.hover_bg }}; --card-accent: {{ book.accent_color }}; padding:2rem;border-radius:10px">
       <div class="cover">
-    <img src="{{ pillar.image | url }}" alt="{{ pillar.alt_text }}"/>
+    <img src="{{ pillar.image | url }}" alt="{{ pillar.alt_text }}" loading="lazy" decoding="async"/>
       </div>
       <div class="meta">
       <span>{{ pillar.category[lang] }}</span>
